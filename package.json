@@ -6,10 +6,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "npm run stitch && concurrently --names 'REVEAL,STITCH' -c 'red,blue' 'reveal-md -w ./slides/stitched.md' 'npm run watch'",
-    "build": "npm run stitch && reveal-md ./slides/stitched.md --static _site",
+    "start": "npm run stitch && concurrently --names 'REVEAL,STITCH' -c 'red,blue' 'reveal-md -w ./slides/stitched.md --css _build/custom.css --preprocessor _build/inject.js' 'npm run watch'",
+    "build": "npm run stitch && reveal-md ./slides/stitched.md --static _site --css _build/custom.css --preprocessor _build/inject.js",
     "stitch": "node _build/stitch.js",
-    "watch": "npm-watch"
+    "watch": "npm-watch",
+    "test": "jest --watch"
   },
   "watch": {
     "stitch": {
@@ -22,6 +23,7 @@
   "devDependencies": {
     "combine-files": "^1.1.8",
     "concurrently": "^4.0.1",
+    "jest": "^23.6.0",
     "npm-watch": "^0.4.0",
     "reveal-md": "^2.3.0"
   }

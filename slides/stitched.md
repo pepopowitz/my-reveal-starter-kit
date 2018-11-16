@@ -9,11 +9,7 @@ revealOptions:
 ---
 # Flux
 
-A bunch of stuff happening
-
-<div class="footer">
-  stevenhicks.me/talk-url ✨ @pepopowitz
-</div>
+A bunch of stuff happening, but no trail
 
 Note: These are notes
 
@@ -21,25 +17,48 @@ and more notes here
 
 ---
 
+Trail: Module
+
 <!-- .slide: class="steve" data-background="#ff5500" -->
 
-<div class="trail">
-  <h1>Module</h1>
-  <h2>Section</h2>
-</div>
-
-## More stuff!!!!
+## More stuff!!!! Including a trail of 'Module'.
 
 ### Happening here <!-- .element: class="fragment" -->
 
 #### If you know what I mean <!-- .element: class="fragment" -->
 
-<div class="footer">
-  stevenhicks.me/talk-url ✨ @pepopowitz
-</div>
+---
+
+Trail: Module,Section
+
+# Stuff!
+
+## Including a trail of Module & Section
+
+---
+
+Trail: Module,Section,Dog
+
+# Three trails!
+
+## Module, section and dog!
+
+---
+
+Footer: false
+
+Trail: Module
+
+# A small trail
+
+## Module
+
+### But no footer
 ---
 
 # Outro
+
+## But no trail
 
 Note:
 
