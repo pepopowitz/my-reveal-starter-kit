@@ -33,13 +33,12 @@ function buildTrailBitElements(rawTrail) {
   });
 }
 
-const footerRegex = /Footer: false\n/m;
-
 function injectFooter(slide) {
-  const match = slide.match(footerRegex);
+  const hideFooterRegex = /Footer: false\n/m;
+  const hideFooter = slide.match(hideFooterRegex);
 
-  if (match) {
-    return slide.replace(footerRegex, '');
+  if (hideFooter) {
+    return slide.replace(hideFooterRegex, '');
   }
 
   const notesRegex = /^Notes:(.*)$/m;
@@ -53,7 +52,7 @@ function injectFooter(slide) {
 }
 
 function appendFooter(slide) {
-  return `${slide.replace(footerRegex, '')}
+  return `${slide}
 
 <div class="footer">
   ${settings.talkUrl} 🦄 @pepopowitz

@@ -1,10 +1,16 @@
-Layout: title
+Footer: false
 
-# Flux
+<!-- .slide: data-background="/images/title.jpg" class="title" -->
 
-A bunch of stuff happening, but no trail
+# Title
 
-Note: These are notes
+## Subtitle goes here
+
+- @pepopowitz
+- steven.j.hicks@gmail.com
+- stevenhicks.me/talkUrl
+
+Notes: These are notes
 
 and more notes here
 
