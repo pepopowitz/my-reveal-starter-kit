@@ -75,7 +75,7 @@ Trail: Heading1,Heading2,Heading3
 ## Subtitle
 
 <div class="footer">
-  stevenhicks.me/talk-url ✨ @pepopowitz
+  stevenhicks.me/talk-url 🦄 @pepopowitz
 </div>`);
     });
 
@@ -90,6 +90,28 @@ Footer: false
 
 # Title
 ## Subtitle`);
+    });
+
+    it('puts footer before notes', () => {
+      const result = injectFooter(`
+# Title
+## Subtitle
+
+Notes:
+blah blah blah
+`);
+
+      expect(result).toEqual(`
+# Title
+## Subtitle
+
+<div class="footer">
+  stevenhicks.me/talk-url 🦄 @pepopowitz
+</div>
+
+Notes:
+blah blah blah
+`);
     });
   });
 });

@@ -1,3 +1,5 @@
+Layout: title
+
 # Flux
 
 A bunch of stuff happening, but no trail
@@ -9,8 +11,7 @@ and more notes here
 ---
 
 Trail: Module
-
-<!-- .slide: class="steve" data-background="#ff5500" -->
+Layout: module
 
 ## More stuff!!!! Including a trail of 'Module'.
 
@@ -20,6 +21,7 @@ Trail: Module
 
 ---
 
+Layout: steve
 Trail: Module,Section
 
 # Stuff!
@@ -33,6 +35,9 @@ Trail: Module,Section,Dog
 # Three trails!
 
 ## Module, section and dog!
+
+Notes:
+and I got some notes, too!
 
 ---
 

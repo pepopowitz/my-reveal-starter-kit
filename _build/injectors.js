@@ -42,7 +42,7 @@ function injectFooter(slide) {
     return slide.replace(footerRegex, '');
   }
 
-  const notesRegex = /^Notes: (.*)$/m;
+  const notesRegex = /^Notes:(.*)$/m;
   const notesMatch = slide.match(notesRegex);
 
   if (notesMatch === null) {
@@ -68,7 +68,37 @@ function insertFooterBeforeNotes(slide, notesMatch) {
 ${slide.slice(notesMatch.index)}`;
 }
 
+function injectLayout(slide) {
+  const regex = /^Layout: (.*)$/m;
+
+  const match = slide.match(regex);
+
+  if (!match) {
+    return slide;
+  }
+
+  const layout = match[1];
+
+  const background = identifyBackground(layout);
+
+  const element = `<!-- .slide: class="${layout}" ${background} -->`;
+
+  return `\n${element}\n${slide.replace(regex, '')}`;
+}
+
+function identifyBackground(layout) {
+  const backgroundColors = {
+    title: 'var(--brand)',
+    module: 'var(--brand-context)',
+  };
+  if (backgroundColors[layout]) {
+    return `data-background="${backgroundColors[layout]}"`;
+  }
+  return '';
+}
+
 module.exports = {
   injectTrail,
   injectFooter,
+  injectLayout,
 };

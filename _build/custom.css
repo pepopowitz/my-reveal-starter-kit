@@ -1,5 +1,7 @@
 body {
+  --brand: navy;
   --brand-context: green;
+  --brand-light: white;
 }
 .reveal .trail {
   position: fixed;
@@ -34,4 +36,12 @@ body {
   right: 0;
   font-size: 2rem;
   color: var(--brand-context);
+}
+
+.reveal .title {
+  color: var(--brand-light);
+}
+
+.reveal .module {
+  color: var(--brand-light);
 }
