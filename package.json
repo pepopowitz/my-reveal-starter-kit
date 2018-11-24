@@ -1,13 +1,13 @@
 {
-  "name": "empty-talk",
+  "name": "my-reveal-starter-kit",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Steven Hicks <steven.j.hicks@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "npm run stitch && concurrently --names 'REVEAL,STITCH' -c 'red,blue' 'reveal-md -w ./slides/stitched.md --css _build/custom.css --preprocessor _build/inject.js' 'npm run watch'",
-    "build": "npm run stitch && reveal-md ./slides/stitched.md --static _site --css _build/custom.css --preprocessor _build/inject.js",
+    "start": "npm run stitch && concurrently --names 'REVEAL,STITCH' -c 'red,blue' 'reveal-md -w ./slides/stitched.md' 'npm run watch'",
+    "build": "npm run stitch && reveal-md ./slides/stitched.md --static _site",
     "stitch": "node _build/stitch.js",
     "watch": "npm-watch",
     "test": "jest --watch"
