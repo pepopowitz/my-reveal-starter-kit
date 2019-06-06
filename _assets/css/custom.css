@@ -1,0 +1,136 @@
+body {
+  --brand: navy;
+  --brand-context: green;
+  --brand-light: aliceblue;
+  --brand-white: white;
+  --brand-black: #222222;
+}
+
+.speaker-controls-notes .value {
+  font-size: 1rem;
+}
+
+.reveal {
+  background: var(--brand-light);
+  background-color: var(--brand-light);
+}
+
+.reveal .inverse h1,
+.reveal .inverse h2,
+.reveal .inverse h3 {
+  color: var(--brand-white);
+  text-shadow: 0 1px 6px var(--brand-black);
+}
+
+.reveal .inverse.highlight h1,
+.reveal .inverse.highlight h2,
+.reveal .inverse.highlight h3 {
+  background-color: var(--brand-context);
+}
+
+.reveal .trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.reveal .trail h1,
+.reveal .trail h2,
+.reveal .trail h3 {
+  font-size: 3rem;
+  color: var(--brand-context);
+}
+.reveal .inverse .trail h1,
+.reveal .inverse .trail h2,
+.reveal .inverse .trail h3 {
+  color: var(--brand-white);
+  text-shadow: 0 1px 6px var(--brand-black);
+}
+
+.reveal .inverse.highlight .trail h1,
+.reveal .inverse.highlight .trail h2,
+.reveal .inverse.highlight .trail h3 {
+  padding-left: 1rem;
+}
+
+.reveal .trail h1 {
+  padding-right: 1rem;
+}
+.reveal .trail h2 {
+  border-left: 3px solid var(--brand-context);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.reveal .trail h3 {
+  border-left: 3px solid var(--brand-context);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.reveal .footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+  color: var(--brand-context);
+}
+.reveal .inverse .footer {
+  color: var(--brand-white);
+  text-shadow: 0 1px 6px var(--brand-black);
+}
+.reveal .title {
+  color: var(--brand-context);
+  text-align: left;
+}
+.reveal .title h1,
+.reveal .title h2 {
+  color: var(--brand-context);
+  text-shadow: 5px 6px 6px var(--brand-white), -5px 6px 6px var(--brand-white),
+    5px -6px 6px var(--brand-white), -5px -6px 6px var(--brand-white);
+  margin-left: -30px;
+}
+
+.reveal .title p {
+  text-shadow: 2px 3px 6px var(--brand-white), -2px 3px 6px var(--brand-white),
+    2px -3px 6px var(--brand-white), -2px -3px 6px var(--brand-white);
+}
+.reveal .title svg {
+  fill: var(--brand-context);
+  width: 2em;
+  height: 1em;
+  vertical-align: text-bottom;
+}
+.reveal .module h1,
+.reveal .module h2,
+.reveal .module h3,
+.reveal .module h4,
+.reveal .module h5,
+.reveal .module h6 {
+  color: var(--brand-light);
+}
+
+.reveal .module .footer {
+  color: var(--brand-light);
+}
+
+.reveal blockquote {
+  box-shadow: none;
+}
+.reveal blockquote + p,
+.reveal ol + p {
+  color: var(--brand-context);
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.reveal .img-30 img {
+  width: 30%;
+}
+.reveal .img-50 img {
+  width: 50%;
+}
+
+.reveal .resources ul {
+  font-size: 0.6em;
+}

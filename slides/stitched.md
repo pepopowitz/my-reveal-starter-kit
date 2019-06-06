@@ -1,13 +1,15 @@
 ---
 title: My Reveal Starter Kit - Steven J Hicks
-theme: solarized
+theme: css/theme.css
 revealOptions:
   transition: 'none'
   controls: false
   progress: false
   center: true
-css: _build/custom.css
+css: css/custom.css
 preprocessor: _build/inject.js
+width: '100%'
+height: '100%'
 ---
 Footer: false
 
