@@ -9,7 +9,6 @@ revealOptions:
 css: _build/custom.css
 preprocessor: _build/inject.js
 ---
-
 Footer: false
 
 <!-- .slide: data-background="/images/title.jpg" class="title" -->
@@ -68,7 +67,6 @@ Trail: Module
 ## Module
 
 ### But no footer
-
 ---
 
 # Outro
