@@ -91,6 +91,14 @@ The URL of the footer can be edited in [/\_build/settings.json](/_build/settings
 
 To disable the footer in a specific slide, add a `Footer: false` property to the top of the slide.
 
+### Offline-friendly
+
+If you like to put things on airplane mode before giving a talk, your slides will still look great. No internet connection necessary to pull in webfonts - they're all included here.
+
+#### Using a different font
+
+Use [goofoffline](https://www.npmjs.com/package/google-fonts-offline) to download the necessary resources from Google fonts, and put the font files in the `/fonts` folder. Either replace the `fonts.css`, or add your new font styles to the existing `fonts.css`.
+
 ## Creating a new talk
 
 1. `git clone <url>` to clone this repo
@@ -123,14 +131,9 @@ I usually like to base the color scheme off of a custom title image (usually fou
 
 Grab a new image, shrink it/optimize it, and replace [/images/title.jpg](/images/title.jpg).
 
-## Things I need to account for yet
-
-- offline (pulling in webfonts, mainly)
-
-## Nice to have
+## Things on my backlog
 
 - friendlier fragment syntax (currently `<!-- .element: class="fragment" -->`)
 - friendlier custom css per slide syntax (currently `<!-- .slide: class="steve" data-background="#ff5500" -->`)
 - sass/something to make handling lotsa css easier
-- custom fonts
 - build a real actual custom theme?
