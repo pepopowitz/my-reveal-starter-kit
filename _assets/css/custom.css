@@ -1,18 +1,36 @@
 body {
-  --brand: navy;
-  --brand-context: green;
-  --brand-light: aliceblue;
-  --brand-white: white;
+  --brand: #0d0d26;
+  --brand-context: #596a73;
+  --brand-medium: #8f2611;
+  --brand-module-bg: #596a73;
+  --brand-light: #f7eee6;
+  --brand-white: #fdfcfc;
   --brand-black: #222222;
+
+  color: var(--brand-context);
 }
 
 .speaker-controls-notes .value {
-  font-size: 1rem;
+  font-size: 1.4em;
 }
 
 .reveal {
-  background: var(--brand-light);
-  background-color: var(--brand-light);
+  background: var(--brand-white);
+  background-color: var(--brand-white);
+}
+
+.reveal h1 strong,
+.reveal h2 strong,
+.reveal h3 strong {
+  color: var(--brand-medium);
+  font-weight: normal;
+}
+.reveal p strong {
+  color: var(--brand-medium);
+}
+
+.reveal h2 code {
+  font-size: 0.8em;
 }
 
 .reveal .inverse h1,
@@ -75,7 +93,8 @@ body {
   font-size: 2rem;
   color: var(--brand-context);
 }
-.reveal .inverse .footer {
+.reveal .inverse .footer,
+.reveal .inverse-footer .footer {
   color: var(--brand-white);
   text-shadow: 0 1px 6px var(--brand-black);
 }
@@ -83,17 +102,12 @@ body {
   color: var(--brand-context);
   text-align: left;
 }
-.reveal .title h1,
-.reveal .title h2 {
-  color: var(--brand-context);
-  text-shadow: 5px 6px 6px var(--brand-white), -5px 6px 6px var(--brand-white),
-    5px -6px 6px var(--brand-white), -5px -6px 6px var(--brand-white);
-  margin-left: -30px;
+.reveal .title h1 {
+  margin-bottom: 4rem;
+  line-height: 1em;
 }
-
-.reveal .title p {
-  text-shadow: 2px 3px 6px var(--brand-white), -2px 3px 6px var(--brand-white),
-    2px -3px 6px var(--brand-white), -2px -3px 6px var(--brand-white);
+.reveal .title h2 {
+  margin-top: -20px;
 }
 .reveal .title svg {
   fill: var(--brand-context);
@@ -113,13 +127,21 @@ body {
 .reveal .module .footer {
   color: var(--brand-light);
 }
-
+.reveal .list > h2,
+.reveal .list > h3 {
+  text-align: left;
+  padding-left: 4rem;
+}
 .reveal blockquote {
   box-shadow: none;
+  font-size: 3.2rem;
+}
+.reveal .long-quote blockquote {
+  font-size: 2.5rem;
 }
 .reveal blockquote + p,
 .reveal ol + p {
-  color: var(--brand-context);
+  color: var(--brand-medium);
   font-style: italic;
   font-size: 2rem;
 }
@@ -130,7 +152,31 @@ body {
 .reveal .img-50 img {
   width: 50%;
 }
-
+.reveal .img-80 img {
+  width: 80%;
+}
 .reveal .resources ul {
   font-size: 0.6em;
+}
+
+.reveal pre + p {
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 5rem;
+  margin-bottom: 40px;
+}
+
+.reveal .slides .double-wide {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reveal .slides .double-wide > h3 {
+  flex: 0 0 50%;
+}
+.reveal .slides .double-wide > h5 {
+  flex: 0 0 50%;
+}
+
+.reveal .slides .long-list h5 {
+  margin: 0;
 }
