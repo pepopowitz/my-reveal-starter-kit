@@ -1,0 +1,182 @@
+body {
+  --brand: #0d0d26;
+  --brand-context: #596a73;
+  --brand-medium: #8f2611;
+  --brand-module-bg: #596a73;
+  --brand-light: #f7eee6;
+  --brand-white: #fdfcfc;
+  --brand-black: #222222;
+
+  color: var(--brand-context);
+}
+
+.speaker-controls-notes .value {
+  font-size: 1.4em;
+}
+
+.reveal {
+  background: var(--brand-white);
+  background-color: var(--brand-white);
+}
+
+.reveal h1 strong,
+.reveal h2 strong,
+.reveal h3 strong {
+  color: var(--brand-medium);
+  font-weight: normal;
+}
+.reveal p strong {
+  color: var(--brand-medium);
+}
+
+.reveal h2 code {
+  font-size: 0.8em;
+}
+
+.reveal .inverse h1,
+.reveal .inverse h2,
+.reveal .inverse h3 {
+  color: var(--brand-white);
+  text-shadow: 0 1px 6px var(--brand-black);
+}
+
+.reveal .inverse.highlight h1,
+.reveal .inverse.highlight h2,
+.reveal .inverse.highlight h3 {
+  background-color: var(--brand-context);
+}
+
+.reveal .trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.reveal .trail h1,
+.reveal .trail h2,
+.reveal .trail h3 {
+  font-size: 3rem;
+  color: var(--brand-context);
+}
+.reveal .inverse .trail h1,
+.reveal .inverse .trail h2,
+.reveal .inverse .trail h3 {
+  color: var(--brand-white);
+  text-shadow: 0 1px 6px var(--brand-black);
+}
+
+.reveal .inverse.highlight .trail h1,
+.reveal .inverse.highlight .trail h2,
+.reveal .inverse.highlight .trail h3 {
+  padding-left: 1rem;
+}
+
+.reveal .trail h1 {
+  padding-right: 1rem;
+}
+.reveal .trail h2 {
+  border-left: 3px solid var(--brand-context);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.reveal .trail h3 {
+  border-left: 3px solid var(--brand-context);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.reveal .footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+  color: var(--brand-context);
+}
+.reveal .inverse .footer,
+.reveal .inverse-footer .footer {
+  color: var(--brand-white);
+  text-shadow: 0 1px 6px var(--brand-black);
+}
+.reveal .title {
+  color: var(--brand-context);
+  text-align: left;
+}
+.reveal .title h1 {
+  margin-bottom: 4rem;
+  line-height: 1em;
+}
+.reveal .title h2 {
+  margin-top: -20px;
+}
+.reveal .title svg {
+  fill: var(--brand-context);
+  width: 2em;
+  height: 1em;
+  vertical-align: text-bottom;
+}
+.reveal .module h1,
+.reveal .module h2,
+.reveal .module h3,
+.reveal .module h4,
+.reveal .module h5,
+.reveal .module h6 {
+  color: var(--brand-light);
+}
+
+.reveal .module .footer {
+  color: var(--brand-light);
+}
+.reveal .list > h2,
+.reveal .list > h3 {
+  text-align: left;
+  padding-left: 4rem;
+}
+.reveal blockquote {
+  box-shadow: none;
+  font-size: 3.2rem;
+}
+.reveal .long-quote blockquote {
+  font-size: 2.5rem;
+}
+.reveal blockquote + p,
+.reveal ol + p {
+  color: var(--brand-medium);
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.reveal .img-30 img {
+  width: 30%;
+}
+.reveal .img-50 img {
+  width: 50%;
+}
+.reveal .img-80 img {
+  width: 80%;
+}
+.reveal .resources ul {
+  font-size: 0.6em;
+}
+
+.reveal pre + p {
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 5rem;
+  margin-bottom: 40px;
+}
+
+.reveal .slides .double-wide {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reveal .slides .double-wide > h3 {
+  flex: 0 0 50%;
+}
+.reveal .slides .double-wide > h5 {
+  flex: 0 0 50%;
+}
+
+.reveal .slides .long-list h5 {
+  margin: 0;
+}

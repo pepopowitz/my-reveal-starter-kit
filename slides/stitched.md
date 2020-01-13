@@ -11,6 +11,7 @@ preprocessor: _build/inject.js
 highlightTheme: 'mono-blue'
 width: '100%'
 height: '100%'
+staticDirs: fonts
 ---
 Footer: false
 

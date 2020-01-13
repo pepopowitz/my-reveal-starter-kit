@@ -24,9 +24,9 @@
   },
   "devDependencies": {
     "combine-files": "^1.1.8",
-    "concurrently": "^4.0.1",
-    "jest": "^24.8.0",
-    "npm-watch": "^0.4.0",
-    "reveal-md": "^2.4.1"
+    "concurrently": "^5.0.2",
+    "jest": "^24.9.0",
+    "npm-watch": "^0.6.0",
+    "reveal-md": "^3.4.2"
   }
 }
