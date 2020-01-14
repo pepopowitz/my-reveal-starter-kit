@@ -8,7 +8,7 @@
   "scripts": {
     "start": "npm run stitch && concurrently --names 'REVEAL,STITCH' -c 'red,blue' 'npm run start:reveal' 'npm run watch'",
     "build": "npm run stitch && npm run build:reveal",
-    "build:reveal": "reveal-md ./slides/stitched.md --static _site --static-dirs=fonts,images,_assets --assets-dir ''",
+    "build:reveal": "reveal-md ./slides/stitched.md --static _site --static-dirs=fonts,images,_assets,plugin --assets-dir ''",
     "start:reveal": "reveal-md ./slides/stitched.md -w",
     "stitch": "node _build/stitch.js",
     "watch": "npm-watch",

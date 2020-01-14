@@ -11,6 +11,7 @@ preprocessor: _build/inject.js
 highlightTheme: 'mono-blue'
 width: '100%'
 height: '100%'
+template: '_template/reveal.html'
 ---
 Footer: false
 
@@ -110,6 +111,7 @@ Trail: Module
 
 ---
 
+LineNumbers: 1,3,4,5-7
 
 ```
 abc
