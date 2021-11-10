@@ -111,7 +111,6 @@ Trail: Module
 
 ---
 
-
 ```
 abc
 var x = y;
@@ -125,13 +124,13 @@ var x = y;
 var x = y;
 var x = y;
 ```
----
 
+---
 # Outro
 
 ## But no trail
 
-Note:
+Notes:
 
 and some outro notes
 
