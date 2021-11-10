@@ -130,6 +130,12 @@ var x = y;
 
 ## But no trail
 
+> this is a quote
+
+- this is a list
+
+this is body copy
+
 Notes:
 
 and some outro notes
