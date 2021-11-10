@@ -24,17 +24,23 @@ Footer: false
 
 ## Steven Hicks
 
-<svg class="icon">
-  <use xlink:href="#si-zocial-twitter" />
-</svg>@pepopowitz
+<p>
+  <svg class="icon">
+    <use xlink:href="#si-zocial-twitter" />
+  </svg>@pepopowitz
+</p>
 
-<svg class="icon">
-  <use xlink:href="#si-zocial-email" />
-</svg>steven.j.hicks@gmail.com
+<p>
+  <svg class="icon">
+    <use xlink:href="#si-zocial-email" />
+  </svg>steven.j.hicks@gmail.com
+</p>
 
-<svg class="icon">
-  <use xlink:href="#si-zocial-cloudapp" />
-</svg>stevenhicks.me/talkUrl
+<p>
+  <svg class="icon">
+    <use xlink:href="#si-zocial-cloudapp" />
+  </svg>stevenhicks.me/talkUrl
+</p>
 
 Notes:
 
