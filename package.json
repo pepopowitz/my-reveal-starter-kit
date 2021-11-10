@@ -27,6 +27,6 @@
     "concurrently": "^5.0.2",
     "jest": "^24.9.0",
     "npm-watch": "^0.6.0",
-    "reveal-md": "^3.4.2"
+    "reveal-md": "^5.2.0"
   }
 }
