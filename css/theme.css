@@ -2,8 +2,8 @@
  * Custom theme, based on Solarized Light theme for reveal.js.
  * Author: Steven Hicks, h/t Achim Staebler
  */
-@import url('/lib/font/league-gothic/league-gothic.css');
-@import url('../fonts/fonts.css');
+@import url('/dist/theme/fonts/league-gothic/league-gothic.css');
+@import url('/fonts/fonts.css');
 
 /**
     * Solarized colors by Ethan Schoonover
