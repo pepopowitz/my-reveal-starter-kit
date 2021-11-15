@@ -102,6 +102,8 @@ Trail: Module
 
 ---
 
+LineNumbers: 3-6,9
+
 ```
 abc
 var x = y;
