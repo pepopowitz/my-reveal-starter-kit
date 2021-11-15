@@ -96,14 +96,14 @@ function injectLineNumbers(slide) {
 
   const lineNumbers = match[1];
 
-  const codeRegex = /```(\S*)((.|\n)*)```/m;
+  const codeRegex = /```(\S*)\n((.|\n)*)```/m;
   const codeMatch = slide.match(codeRegex);
 
   if (!codeMatch) {
     return slide;
   }
 
-  const replaceFenceWithCode = `<pre><code class="hljs lang-\$1" data-line-numbers="${lineNumbers}">$2</code></pre>`;
+  const replaceFenceWithCode = `<pre class="line-numbers"><code class="hljs lang-\$1" data-highlight-lines="${lineNumbers}">$2</code></pre>`;
 
   return slide.replace(regex, '').replace(codeRegex, replaceFenceWithCode);
 }

@@ -13,6 +13,7 @@ width: '100%'
 height: '100%'
 staticDirs: fonts
 ---
+
 Footer: false
 
 <!-- .slide: data-background="/images/title.jpg" class="title" -->
@@ -117,6 +118,12 @@ Trail: Module
 
 ---
 
+# <<<<<<< HEAD
+
+LineNumbers: 1,3,4,5-7
+
+> > > > > > > main
+
 ```
 abc
 var x = y;
@@ -132,6 +139,7 @@ var x = y;
 ```
 
 ---
+
 # Outro
 
 ## But no trail
