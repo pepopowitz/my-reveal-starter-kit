@@ -8,8 +8,8 @@
   "scripts": {
     "start": "npm run stitch && concurrently --names 'REVEAL,STITCH' -c 'red,blue' 'npm run start:reveal' 'npm run watch'",
     "build": "npm run stitch && npm run build:reveal",
-    "build:reveal": "reveal-md ./slides/stitched.md --static _site --static-dirs=fonts,images,_assets,plugin --assets-dir ''",
-    "start:reveal": "reveal-md ./slides/stitched.md -w",
+    "build:reveal": "reveal-md ./stitched.md --static-dirs 'fonts,images' --static _site",
+    "start:reveal": "reveal-md ./stitched.md -w",
     "stitch": "node _build/stitch.js",
     "watch": "npm-watch",
     "test": "jest --watch"
@@ -24,9 +24,9 @@
   },
   "devDependencies": {
     "combine-files": "^1.1.8",
-    "concurrently": "^4.0.1",
-    "jest": "^24.8.0",
-    "npm-watch": "^0.4.0",
-    "reveal-md": "^2.4.1"
+    "concurrently": "^5.0.2",
+    "jest": "^24.9.0",
+    "npm-watch": "^0.6.0",
+    "reveal-md": "^5.2.0"
   }
 }

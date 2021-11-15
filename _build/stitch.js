@@ -7,8 +7,8 @@ async function stitch() {
   const files = await readdirAsync('slides/src');
 
   combineFiles(
-    files.filter(includeFile).map(filename => `slides/src/${filename}`),
-    'slides/stitched.md'
+    files.filter(includeFile).map((filename) => `slides/src/${filename}`),
+    'stitched.md'
   );
 }
 

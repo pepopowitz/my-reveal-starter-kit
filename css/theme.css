@@ -2,20 +2,20 @@
  * Custom theme, based on Solarized Light theme for reveal.js.
  * Author: Steven Hicks, h/t Achim Staebler
  */
-@import url('/lib/font/league-gothic/league-gothic.css');
+@import url('/dist/theme/fonts/league-gothic/league-gothic.css');
 @import url('/fonts/fonts.css');
 
 /**
-   * Solarized colors by Ethan Schoonover
-   */
+    * Solarized colors by Ethan Schoonover
+    */
 html * {
   color-profile: sRGB;
   rendering-intent: auto;
 }
 
 /*********************************************
-   * GLOBAL STYLES
-   *********************************************/
+    * GLOBAL STYLES
+    *********************************************/
 body {
   background: #fdf6e3;
   background-color: #fdf6e3;
@@ -44,11 +44,16 @@ body {
 .reveal .slides section > section {
   line-height: 1.3;
   font-weight: inherit;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*********************************************
-   * HEADERS
-   *********************************************/
+    * HEADERS
+    *********************************************/
 .reveal h1,
 .reveal h2,
 .reveal h3,
@@ -86,8 +91,8 @@ body {
 }
 
 /*********************************************
-   * OTHER
-   *********************************************/
+    * OTHER
+    *********************************************/
 .reveal p {
   margin: 20px 0;
   line-height: 1.3;
@@ -250,8 +255,8 @@ body {
 }
 
 /*********************************************
-   * LINKS
-   *********************************************/
+    * LINKS
+    *********************************************/
 .reveal a {
   color: #268bd2;
   text-decoration: none;
@@ -272,14 +277,14 @@ body {
 }
 
 /*********************************************
-   * IMAGES
-   *********************************************/
+    * IMAGES
+    *********************************************/
 /* .reveal section img {
-   margin: 15px 0px;
-   background: rgba(255, 255, 255, 0.12);
-   border: 4px solid #657b83;
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
- } */
+    margin: 15px 0px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 4px solid #657b83;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  } */
 
 .reveal section img.plain {
   border: 0;
@@ -299,15 +304,15 @@ body {
 }
 
 /*********************************************
-   * NAVIGATION CONTROLS
-   *********************************************/
+    * NAVIGATION CONTROLS
+    *********************************************/
 .reveal .controls {
   color: #268bd2;
 }
 
 /*********************************************
-   * PROGRESS BAR
-   *********************************************/
+    * PROGRESS BAR
+    *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
   color: #268bd2;
@@ -320,8 +325,8 @@ body {
 }
 
 /*********************************************
-   * PRINT BACKGROUND
-   *********************************************/
+    * PRINT BACKGROUND
+    *********************************************/
 @media print {
   .backgrounds {
     background-color: #fdf6e3;

@@ -11,8 +11,9 @@ preprocessor: _build/inject.js
 highlightTheme: 'mono-blue'
 width: '100%'
 height: '100%'
-template: '_template/reveal.html'
+staticDirs: fonts
 ---
+
 Footer: false
 
 <!-- .slide: data-background="/images/title.jpg" class="title" -->
@@ -29,17 +30,23 @@ Footer: false
 
 ## Steven Hicks
 
-<svg class="icon">
-  <use xlink:href="#si-zocial-twitter" />
-</svg>@pepopowitz
+<p>
+  <svg class="icon">
+    <use xlink:href="#si-zocial-twitter" />
+  </svg>@pepopowitz
+</p>
 
-<svg class="icon">
-  <use xlink:href="#si-zocial-email" />
-</svg>steven.j.hicks@gmail.com
+<p>
+  <svg class="icon">
+    <use xlink:href="#si-zocial-email" />
+  </svg>steven.j.hicks@gmail.com
+</p>
 
-<svg class="icon">
-  <use xlink:href="#si-zocial-cloudapp" />
-</svg>stevenhicks.me/talkUrl
+<p>
+  <svg class="icon">
+    <use xlink:href="#si-zocial-cloudapp" />
+  </svg>stevenhicks.me/talkUrl
+</p>
 
 Notes:
 
@@ -111,7 +118,11 @@ Trail: Module
 
 ---
 
+# <<<<<<< HEAD
+
 LineNumbers: 1,3,4,5-7
+
+> > > > > > > main
 
 ```
 abc
@@ -126,13 +137,20 @@ var x = y;
 var x = y;
 var x = y;
 ```
+
 ---
 
 # Outro
 
 ## But no trail
 
-Note:
+> this is a quote
+
+- this is a list
+
+this is body copy
+
+Notes:
 
 and some outro notes
 
@@ -148,17 +166,23 @@ Footer: false
 
 ## Steven Hicks
 
-<svg class="icon">
-  <use xlink:href="#si-zocial-twitter" />
-</svg>@pepopowitz
+<p>
+  <svg class="icon">
+    <use xlink:href="#si-zocial-twitter" />
+  </svg>@pepopowitz
+</p>
 
-<svg class="icon">
-  <use xlink:href="#si-zocial-email" />
-</svg>steven.j.hicks@gmail.com
+<p>
+  <svg class="icon">
+    <use xlink:href="#si-zocial-email" />
+  </svg>steven.j.hicks@gmail.com
+</p>
 
-<svg class="icon">
-  <use xlink:href="#si-zocial-cloudapp" />
-</svg>stevenhicks.me/talkUrl
+<p>
+  <svg class="icon">
+    <use xlink:href="#si-zocial-cloudapp" />
+  </svg>stevenhicks.me/talkUrl
+</p>
 
 Notes:
 

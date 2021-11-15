@@ -5,11 +5,12 @@ revealOptions:
   transition: 'none'
   controls: false
   progress: false
-  center: true
+  display: flex
+  disableLayout: false
 css: css/custom.css
 preprocessor: _build/inject.js
 highlightTheme: 'mono-blue'
 width: '100%'
 height: '100%'
-template: '_template/reveal.html'
+staticDirs: fonts
 ---

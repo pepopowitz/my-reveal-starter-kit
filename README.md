@@ -27,6 +27,14 @@ xx_not_needed.md
 
 Files 01-03 above would be stitched together for the final slideshow; xx_not_needed would not.
 
+#### Caution! Location of slide separators (`---`) matters with multiple files!
+
+While it might be tempting to put a `---` slide separator at the beginning of a file because it feels like a fresh start, reveal-md will throw an error as it will process the beginning of that file as if it contains yaml frontmatter:
+
+> `YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 11, column 1:`
+
+To avoid this, _end_ each file with a `---` slide separator so that the next may begin with its first slide content.
+
 ### Custom "layouts"
 
 Custom "layouts" are accomplished by applying a custom CSS class to a slide. You can do this by specifying a .slide modifier within a slide (`<!-- .slide: class="special" data-background="#ff5500" -->`), or by specifying `Layout: special` at the top of a slide.
