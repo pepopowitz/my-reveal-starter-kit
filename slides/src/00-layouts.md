@@ -5,7 +5,8 @@ revealOptions:
   transition: 'none'
   controls: false
   progress: false
-  center: true
+  display: flex
+  disableLayout: false
 css: css/custom.css
 preprocessor: _build/inject.js
 highlightTheme: 'mono-blue'
