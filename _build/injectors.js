@@ -103,7 +103,7 @@ function injectLineNumbers(slide) {
     return slide;
   }
 
-  const replaceFenceWithCode = `<pre class="line-numbers"><code class="hljs lang-\$1" data-highlight-lines="${lineNumbers}">$2</code></pre>`;
+  const replaceFenceWithCode = `<pre><code class="hljs lang-\$1" data-line-numbers="${lineNumbers}">$2</code></pre>`;
 
   return slide.replace(regex, '').replace(codeRegex, replaceFenceWithCode);
 }

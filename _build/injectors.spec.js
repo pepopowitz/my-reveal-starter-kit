@@ -1,8 +1,8 @@
-const { injectTrail, injectFooter } = require('./injectors');
+const { injectTrail, injectFooter, injectLineNumbers } = require("./injectors");
 
-describe('_build/injectors', () => {
-  describe('injectTrail', () => {
-    it('doesn`t inject anything if no trail requested', () => {
+describe("_build/injectors", () => {
+  describe("injectTrail", () => {
+    it("doesn`t inject anything if no trail requested", () => {
       const result = injectTrail(`
 # Title
 ## Subtitle`);
@@ -12,7 +12,7 @@ describe('_build/injectors', () => {
 ## Subtitle`);
     });
 
-    it('injects a single heading', () => {
+    it("injects a single heading", () => {
       const result = injectTrail(`
 Trail: Heading1
 
@@ -28,7 +28,7 @@ Trail: Heading1
 ## Subtitle`);
     });
 
-    it('injects two headings', () => {
+    it("injects two headings", () => {
       const result = injectTrail(`
 Trail: Heading1,Heading2
 
@@ -45,7 +45,7 @@ Trail: Heading1,Heading2
 ## Subtitle`);
     });
 
-    it('injects three headings', () => {
+    it("injects three headings", () => {
       const result = injectTrail(`
 Trail: Heading1,Heading2,Heading3
 
@@ -64,8 +64,8 @@ Trail: Heading1,Heading2,Heading3
     });
   });
 
-  describe('injectFooter', () => {
-    it('injects footer by default', () => {
+  describe("injectFooter", () => {
+    it("injects footer by default", () => {
       const result = injectFooter(`
 # Title
 ## Subtitle`);
@@ -79,7 +79,7 @@ Trail: Heading1,Heading2,Heading3
 </div>`);
     });
 
-    it('skips footer when specified', () => {
+    it("skips footer when specified", () => {
       const result = injectFooter(`
 Footer: false
 
@@ -92,7 +92,7 @@ Footer: false
 ## Subtitle`);
     });
 
-    it('puts footer before notes', () => {
+    it("puts footer before notes", () => {
       const result = injectFooter(`
 # Title
 ## Subtitle
@@ -112,6 +112,33 @@ blah blah blah
 Notes:
 blah blah blah
 `);
+    });
+  });
+
+  describe("injectLineNumbers", () => {
+    it("does what I expect", () => {
+      const result = injectLineNumbers(`
+LineNumbers: 1-2
+
+\`\`\`bash
+git add .
+git commit -m "do things"
+git add .
+git commit -m "do things"
+\`\`\`
+      `);
+
+      expect(result).toMatchInlineSnapshot(`
+        "
+
+
+        <pre><code class=\\"hljs lang-bash\\" data-line-numbers=\\"1-2\\">git add .
+        git commit -m \\"do things\\"
+        git add .
+        git commit -m \\"do things\\"
+        </code></pre>
+              "
+      `);
     });
   });
 });
