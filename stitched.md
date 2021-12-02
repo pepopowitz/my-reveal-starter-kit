@@ -8,6 +8,7 @@ revealOptions:
   display: flex
   disableLayout: false
 css: css/custom.css
+scripts: js/reloadSvgBackgrounds.js
 preprocessor: _build/inject.js
 highlightTheme: 'mono-blue'
 width: '100%'
